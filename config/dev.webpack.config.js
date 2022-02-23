@@ -30,6 +30,7 @@ const webpackProxy = {
   deployment: process.env.BETA ? 'beta/apps' : 'apps',
   useProxy: true,
   env: process.env.CHROME_ENV ? process.env.CHROME_ENV : 'stage-stable',
+  localChrome: '/Users/hq/SoftwareDev/arivepr/insights-chrome/build/',
   appUrl: process.env.BETA
     ? ['/beta/insights/remediations']
     : ['/insights/remediations'],
